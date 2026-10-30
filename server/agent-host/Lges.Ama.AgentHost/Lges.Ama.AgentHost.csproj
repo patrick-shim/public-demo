@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>lges-ama-agent-host</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../agent/Lges.Ama.Agent/Lges.Ama.Agent.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Core" />
+    <PackageReference Include="Azure.Identity" />
+
+    <!-- ==================== A365 SDK: HOST RUNTIME, DISABLED WORKIQ GATE, AND OBSERVABILITY ========= -->
+    <PackageReference Include="Microsoft.Agents.A365.Runtime" />
+    <PackageReference Include="Microsoft.Bcl.Memory" />
+    <PackageReference Include="Microsoft.OpenTelemetry" />
+    <!-- ==================== END A365 SDK =========================================================== -->
+
+    <!-- ==================== PURVIEW DLP: FAIL-CLOSED PROMPT AND RESPONSE ENFORCEMENT ================ -->
+    <PackageReference Include="Microsoft.Agents.AI.Purview" />
+    <!-- ==================== END PURVIEW DLP ========================================================= -->
+
+    <PackageReference Include="Microsoft.Agents.Authentication.Msal" />
+    <PackageReference Include="Microsoft.Agents.Hosting.AspNetCore" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" />
+    <PackageReference Include="OpenAI" />
+    <PackageReference Include="System.ClientModel" />
+    <PackageReference Include="Microsoft.Extensions.AI" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+    <PackageReference Include="Microsoft.Identity.Client" />
+    <PackageReference Include="ModelContextProtocol" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Lges.Ama.AgentHost.Tests" />
+    <EmbeddedResource Include="../../../contracts/mcp-contracts.json" LogicalName="Lges.Ama.McpContracts.json" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../../server/agent-host/Lges.Ama.AgentHost/Lges.Ama.AgentHost.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Core" />
+    <PackageReference Include="Microsoft.Agents.A365.Runtime" />
+    <PackageReference Include="Microsoft.Agents.AI.Purview" />
+    <PackageReference Include="Microsoft.Agents.Authentication" />
+    <PackageReference Include="Microsoft.Agents.Authentication.Msal" />
+    <PackageReference Include="Microsoft.Agents.Builder" />
+    <PackageReference Include="Microsoft.Agents.Core" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <PackageReference Include="Microsoft.Bcl.Memory" />
+    <PackageReference Include="Microsoft.OpenTelemetry" />
+    <PackageReference Include="ModelContextProtocol.AspNetCore" />
+    <PackageReference Include="MSTest" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+</Project>

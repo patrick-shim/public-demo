@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../shared/Lges.Ama.Mcp.Hosting/Lges.Ama.Mcp.Hosting.csproj" />
+    <ProjectReference Include="../../integrations/Lges.Ama.PublicData/Lges.Ama.PublicData.csproj" />
+    <PackageReference Include="ModelContextProtocol.AspNetCore" />
+  </ItemGroup>
+</Project>

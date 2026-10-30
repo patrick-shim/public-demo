@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../../server/integrations/Lges.Ama.PublicData/Lges.Ama.PublicData.csproj" />
+    <PackageReference Include="MSTest" />
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+</Project>

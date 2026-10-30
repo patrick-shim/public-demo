@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.26/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.26",
+  "version": "1.0.4",
+  "id": "{{TEAMS_APP_ID}}",
+  "developer": {"name": "LGES AMA Demo", "websiteUrl": "https://{{HOST_DOMAIN}}", "privacyUrl": "https://{{HOST_DOMAIN}}/privacy", "termsOfUseUrl": "https://{{HOST_DOMAIN}}/terms"},
+  "icons": {"color": "color.png", "outline": "outline.png"},
+  "name": {"short": "LG Energy Solution AMA", "full": "LG Energy Solution AMA (OBO Demo)"},
+  "description": {"short": "LG에너지솔루션 뉴스·주가·IR 정보를 출처와 함께 찾아보는 Agent 365 데모", "full": "공개 자료만 조회하는 고객 데모 에이전트입니다. LG에너지솔루션 공식 뉴스룸, IR 자료, 주가 페이지와 GDELT 뉴스 검색을 활용하며 출처와 기준 시점을 함께 제공합니다. 한국어와 영어를 지원합니다. LG에너지솔루션 공식 서비스 또는 투자 자문이 아닙니다."},
+  "accentColor": "#A50034",
+  "copilotAgents": {"customEngineAgents": [{"type": "bot", "id": "{{BOT_APP_ID}}"}]},
+  "bots": [{"botId": "{{BOT_APP_ID}}", "scopes": ["copilot", "personal"], "supportsFiles": false, "isNotificationOnly": false,
+    "commandLists": [{"scopes": ["copilot", "personal"], "commands": [
+      {"title": "최근 뉴스", "description": "최근 LG에너지솔루션 뉴스를 출처와 함께 요약해 줘"},
+      {"title": "주가 확인", "description": "LG에너지솔루션 주가와 기준 시점을 알려 줘"},
+      {"title": "실적과 IR", "description": "최근 실적 발표와 공식 IR 자료를 찾아 줘"}
+    ]}]}],
+  "permissions": ["identity"],
+  "webApplicationInfo": {"id": "{{BOT_APP_ID}}", "resource": "api://botid-{{BOT_APP_ID}}"},
+  "validDomains": ["{{HOST_DOMAIN}}", "token.botframework.com", "login.microsoftonline.com"]
+}

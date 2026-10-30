@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../server/agent-host/Lges.Ama.AgentHost/Lges.Ama.AgentHost.csproj" /></ItemGroup>
+</Project>

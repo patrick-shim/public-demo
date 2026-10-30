@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/server/">
+    <Project Path="server/agent/Lges.Ama.Agent/Lges.Ama.Agent.csproj" />
+    <Project Path="server/agent-host/Lges.Ama.AgentHost/Lges.Ama.AgentHost.csproj" />
+    <Project Path="server/mcp/shared/Lges.Ama.Mcp.Hosting/Lges.Ama.Mcp.Hosting.csproj" />
+    <Project Path="server/mcp/Lges.Ama.Mcp/Lges.Ama.Mcp.csproj" />
+    <Project Path="server/integrations/Lges.Ama.PublicData/Lges.Ama.PublicData.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Lges.Ama.AgentHost.Tests/Lges.Ama.AgentHost.Tests.csproj" />
+    <Project Path="tests/Lges.Ama.Mcp.Hosting.Tests/Lges.Ama.Mcp.Hosting.Tests.csproj" />
+    <Project Path="tests/Lges.Ama.PublicData.Tests/Lges.Ama.PublicData.Tests.csproj" />
+  </Folder>
+</Solution>

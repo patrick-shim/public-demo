@@ -1,0 +1,13 @@
+{
+  "TenantId": "<YOUR-ENTRA-TENANT-GUID>",
+  "SubscriptionId": "<YOUR-AZURE-SUBSCRIPTION-GUID>",
+  "ResourceGroup": "rg-lges-ama-lab",
+  "Location": "koreacentral",
+  "RegistryName": "<YOUR-EXISTING-ACR-NAME>",
+  "EnvironmentName": "<YOUR-EXISTING-CONTAINER-APPS-ENVIRONMENT>",
+  "FoundryResourceGroup": "<YOUR-FOUNDRY-RESOURCE-GROUP>",
+  "FoundryAccountName": "<YOUR-FOUNDRY-ACCOUNT-NAME>",
+  "FoundryEndpoint": "https://<YOUR-FOUNDRY-ACCOUNT>.services.ai.azure.com",
+  "FoundryModel": "<YOUR-RESPONSES-API-MODEL-DEPLOYMENT-NAME>",
+  "PromptShieldEndpoint": "https://<YOUR-CONTENT-SAFETY-ACCOUNT>.cognitiveservices.azure.com"
+}

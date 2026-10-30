@@ -1,0 +1,56 @@
+{
+  "news": [
+    {
+      "Name": "read_news_article",
+      "Description": "Reads bounded text from an official LG Energy Solution newsroom article returned by search.",
+      "Parameters": [
+        "articleId"
+      ],
+      "RequiredParameters": [
+        "articleId"
+      ],
+      "SchemaSha256": "E9935FEC9223139E057C0E8E73A52508743C3F564FBFBEC17D1B2AB1E7F69330"
+    },
+    {
+      "Name": "search_company_news",
+      "Description": "Searches LG Energy Solution official news and GDELT with source links and explicit partial-result notices.",
+      "Parameters": [
+        "query",
+        "days",
+        "limit"
+      ],
+      "RequiredParameters": [],
+      "SchemaSha256": "9E900C6BE96061E6E6E42DA7F17E30CFE1594B051FD35E197D1F4999547FF029"
+    }
+  ],
+  "ir": [
+    {
+      "Name": "get_ir_materials",
+      "Description": "Finds official LG Energy Solution earnings materials; returns document links without claiming to have read PDFs.",
+      "Parameters": [
+        "year",
+        "limit"
+      ],
+      "RequiredParameters": [],
+      "SchemaSha256": "2BFC3AF81A5D01FD5A19FB0067EC3E1F88B80F369A3E78E4FB0A5BF127F1A790"
+    },
+    {
+      "Name": "get_company_overview",
+      "Description": "Reads LG Energy Solution company overview from its official website.",
+      "Parameters": [
+        "language"
+      ],
+      "RequiredParameters": [],
+      "SchemaSha256": "CDA10855C7853FD57AD71F4FE94360B2D0B6D65D718808355FDC52BD0D85D503"
+    }
+  ],
+  "market": [
+    {
+      "Name": "get_stock_quote",
+      "Description": "Reads KOSPI 373220 from LG Energy Solution's embedded IR stock page, with KRW, KST observation time, and delay caveats.",
+      "Parameters": [],
+      "RequiredParameters": [],
+      "SchemaSha256": "EFDDC7BD8BBCEF73A14EB1ACE1FFDAEC81E518EF1E13C1E9271D0B8ACB694A49"
+    }
+  ]
+}

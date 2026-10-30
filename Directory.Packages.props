@@ -1,0 +1,39 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="AngleSharp" Version="1.8.5" />
+    <PackageVersion Include="Azure.Core" Version="1.61.0" />
+    <PackageVersion Include="Azure.Identity" Version="1.21.0" />
+
+    <!-- ==================== A365 SDK: STABLE RUNTIME, TOOLING, AND OBSERVABILITY ==================== -->
+    <PackageVersion Include="Microsoft.Agents.A365.Runtime" Version="1.0.0" />
+    <PackageVersion Include="Microsoft.Agents.Authentication" Version="1.4.83" />
+    <PackageVersion Include="Microsoft.Agents.Builder" Version="1.4.83" />
+    <PackageVersion Include="Microsoft.Agents.Core" Version="1.4.83" />
+    <!-- Security override for the version currently pulled by Microsoft.Agents.Connector. -->
+    <PackageVersion Include="Microsoft.Bcl.Memory" Version="10.0.10" />
+    <PackageVersion Include="Microsoft.OpenTelemetry" Version="1.0.7" />
+    <!-- ==================== END A365 SDK =========================================================== -->
+
+    <!-- ==================== PURVIEW DLP: AGENT FRAMEWORK PROMPT/RESPONSE MIDDLEWARE ================ -->
+    <PackageVersion Include="Microsoft.Agents.AI" Version="1.17.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.OpenAI" Version="1.17.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.Purview" Version="1.17.0-rc1" />
+    <PackageVersion Include="Microsoft.Extensions.AI" Version="10.7.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.8.3" />
+    <!-- ==================== END PURVIEW DLP ========================================================= -->
+
+    <PackageVersion Include="Microsoft.Agents.Authentication.Msal" Version="1.4.83" />
+    <PackageVersion Include="Microsoft.Agents.Hosting.AspNetCore" Version="1.4.83" />
+    <PackageVersion Include="Microsoft.Identity.Client" Version="4.84.2" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.10" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.19.2" />
+    <PackageVersion Include="ModelContextProtocol" Version="2.1.0" />
+    <PackageVersion Include="ModelContextProtocol.AspNetCore" Version="2.1.0" />
+    <PackageVersion Include="OpenAI" Version="2.12.0" />
+    <PackageVersion Include="System.ClientModel" Version="1.15.0" />
+    <PackageVersion Include="MSTest" Version="4.0.1" />
+  </ItemGroup>
+</Project>
